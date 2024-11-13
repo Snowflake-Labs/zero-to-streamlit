@@ -10,6 +10,8 @@
       
       
       
+        <link rel="canonical" href="https://snowflake-labs.github.io/zero-to-streamlit/data_prepration/">
+      
       
         <link rel="prev" href="../interactivity/">
       
@@ -22,11 +24,14 @@
     
     
       
-        <title>Data Preperation - Streamlit 101</title>
+        <title>Data Prepration - Streamlit 101</title>
       
     
     
       <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -45,6 +50,8 @@
       
     
     
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -55,7 +62,12 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -100,15 +112,15 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Data Preperation
+              Data Prepration
             
           </span>
         </div>
       </div>
     </div>
     
+      
     
-      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -160,7 +172,7 @@
         
   
   <span class="md-ellipsis">
-    Zero to Streamlit
+    Overview
   </span>
   
 
@@ -180,7 +192,7 @@
         
   
   <span class="md-ellipsis">
-    Setup
+    Environment Setup
   </span>
   
 
@@ -191,6 +203,41 @@
     
       
       
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Streamlit OSS
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Streamlit OSS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
   
   
   
@@ -200,7 +247,7 @@
         
   
   <span class="md-ellipsis">
-    Deploy Application
+    Deploy
   </span>
   
 
@@ -208,9 +255,54 @@
     </li>
   
 
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
     
       
       
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Application
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Application
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
   
   
   
@@ -228,9 +320,10 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
@@ -240,7 +333,7 @@
         
   
   <span class="md-ellipsis">
-    Interactivity
+    Interact with Application
   </span>
   
 
@@ -248,9 +341,10 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
     
@@ -269,7 +363,7 @@
           
   
   <span class="md-ellipsis">
-    Data Preperation
+    Data Prepration
   </span>
   
 
@@ -280,7 +374,7 @@
         
   
   <span class="md-ellipsis">
-    Data Preperation
+    Data Prepration
   </span>
   
 
@@ -317,9 +411,10 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
@@ -329,11 +424,82 @@
         
   
   <span class="md-ellipsis">
-    Model Training
+    Train and Predict
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Streamlit in  Snowflake
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Streamlit in  Snowflake
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../snowflake_deploy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deploy to Snowflake
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -388,13 +554,13 @@
                   
 
 
-<h1 id="data-preperation">Data Preperation</h1>
+<h1 id="data-preperation">Data Preperation<a class="headerlink" href="#data-preperation" title="Permanent link">&para;</a></h1>
 <p>As part of this module we will prepare the data for model training. With our penguin dataset we need to <code>Encode</code>:</p>
 <ul>
 <li>The <strong>X(features)</strong> namely <code>island</code> and <code>sex</code></li>
 <li>The <strong>y(target)</strong> <code>species</code> names</li>
 </ul>
-<h2 id="encode-features-and-target">Encode Features and Target</h2>
+<h2 id="encode-features-and-target">Encode Features and Target<a class="headerlink" href="#encode-features-and-target" title="Permanent link">&para;</a></h2>
 <p><strong>TODO</strong>: explain what we are doing here </p>
 <p>Edit and update the <code>streamlit_app.py</code> with the following code,</p>
 <div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">  1</a></span>

@@ -1,3 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://snowflake-labs.github.io/zero-to-streamlit/</loc>
+         <lastmod>2024-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://snowflake-labs.github.io/zero-to-streamlit/data_prepration/</loc>
+         <lastmod>2024-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://snowflake-labs.github.io/zero-to-streamlit/datset/</loc>
+         <lastmod>2024-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://snowflake-labs.github.io/zero-to-streamlit/deploy_to_streamlit_cloud/</loc>
+         <lastmod>2024-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://snowflake-labs.github.io/zero-to-streamlit/interactivity/</loc>
+         <lastmod>2024-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://snowflake-labs.github.io/zero-to-streamlit/model_training/</loc>
+         <lastmod>2024-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://snowflake-labs.github.io/zero-to-streamlit/setup/</loc>
+         <lastmod>2024-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://snowflake-labs.github.io/zero-to-streamlit/snowflake_deploy/</loc>
+         <lastmod>2024-11-13</lastmod>
+    </url>
 </urlset>
