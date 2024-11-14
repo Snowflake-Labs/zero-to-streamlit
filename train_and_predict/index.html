@@ -6,11 +6,11 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Getting started with Streamlit">
+        <meta name="description" content="Getting started with Streamlit OSS and Streamlit in Snowflake.">
       
       
       
-        <link rel="canonical" href="https://snowflake-labs.github.io/zero-to-streamlit/model_training/">
+        <link rel="canonical" href="https://snowflake-labs.github.io/zero-to-streamlit/train_and_predict/">
       
       
         <link rel="prev" href="../data_prepration/">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Train and Predict - Streamlit 101</title>
+        <title>Training and Prediction - Streamlit 101: From Open Source to Snowflake Native Development</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#model-training" class="md-skip">
+        <a href="#training-and-prediction" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Streamlit 101" class="md-header__button md-logo" aria-label="Streamlit 101" data-md-component="logo">
+    <a href=".." title="Streamlit 101: From Open Source to Snowflake Native Development" class="md-header__button md-logo" aria-label="Streamlit 101: From Open Source to Snowflake Native Development" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -106,13 +106,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Streamlit 101
+            Streamlit 101: From Open Source to Snowflake Native Development
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Train and Predict
+              Training and Prediction
             
           </span>
         </div>
@@ -150,13 +150,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Streamlit 101" class="md-nav__button md-logo" aria-label="Streamlit 101" data-md-component="logo">
+    <a href=".." title="Streamlit 101: From Open Source to Snowflake Native Development" class="md-nav__button md-logo" aria-label="Streamlit 101: From Open Source to Snowflake Native Development" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Streamlit 101
+    Streamlit 101: From Open Source to Snowflake Native Development
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -207,59 +207,16 @@
   
   
   
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Streamlit OSS
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            Streamlit OSS
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../deploy_to_streamlit_cloud/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Deploy
+    Deploy to Streamlit Cloud
   </span>
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -287,7 +244,7 @@
             
   
   <span class="md-ellipsis">
-    Application
+    Penguins App
   </span>
   
 
@@ -297,7 +254,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Application
+            Penguins App
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -312,7 +269,7 @@
         
   
   <span class="md-ellipsis">
-    Dataset
+    Exploring Dataset
   </span>
   
 
@@ -384,7 +341,7 @@
           
   
   <span class="md-ellipsis">
-    Train and Predict
+    Training and Prediction
   </span>
   
 
@@ -395,7 +352,7 @@
         
   
   <span class="md-ellipsis">
-    Train and Predict
+    Training and Prediction
   </span>
   
 
@@ -420,6 +377,15 @@
   <a href="#train-and-predict" class="md-nav__link">
     <span class="md-ellipsis">
       Train and Predict
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
     </span>
   </a>
   
@@ -504,6 +470,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../summary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Summary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -539,6 +525,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -554,10 +549,16 @@
                   
 
 
-<h1 id="model-training">Model Training<a class="headerlink" href="#model-training" title="Permanent link">&para;</a></h1>
-<p>In this chapter let us train the model and predict the Penguin species using the Input features. We will use the <a href="https://scikit-learn.org/stable/index.html">scikit-learn's</a> <a href="https://scikit-learn.org/stable/modules/ensemble.html#forest">Random Forest</a> classifier.</p>
+<h1 id="training-and-prediction">Training and Prediction<a class="headerlink" href="#training-and-prediction" title="Permanent link">&para;</a></h1>
+<p>Now that our data is properly encoded, we'll use a classification model to predict penguin species based on their filtered physical characteristics. We'll employ scikit-learn's <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html">Random Forest Classifier</a> to calculate probability scores for each species prediction.</p>
+<p>In this chapter, we will:</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Split our filtered dataset into training and testing sets</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Train a Random Forest Classifier using our selected feature set  </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Calculate prediction probabilities for each penguin species</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Visualize these probabilities using Streamlit's interactive components</li>
+</ul>
 <h2 id="train-and-predict">Train and Predict<a class="headerlink" href="#train-and-predict" title="Permanent link">&para;</a></h2>
-<p><strong>TODO</strong>: explain what we are doing here </p>
 <p>As part of displaying the predictions we will use the following Streamlit components to make the output asthetically appealing,</p>
 <ul>
 <li><a href="https://docs.streamlit.io/develop/api-reference/data/st.column_config/st.column_config.progresscolumn">Progress Column Config</a></li>
@@ -961,6 +962,15 @@
 </span></span><span id="__span-0-197"><a id="__codelineno-0-197" name="__codelineno-0-197"></a><span class="hll"><span class="n">st</span><span class="o">.</span><span class="n">subheader</span><span class="p">(</span><span class="s2">&quot;Predicted Species&quot;</span><span class="p">)</span>
 </span></span><span id="__span-0-198"><a id="__codelineno-0-198" name="__codelineno-0-198"></a><span class="hll"><span class="n">st</span><span class="o">.</span><span class="n">success</span><span class="p">(</span><span class="n">p_cols</span><span class="p">[</span><span class="n">prediction</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span>
 </span></span></code></pre></div></td></tr></table></div>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<p>After successfully creating an interactive penguin species prediction app using Streamlit's Progress bars for probability visualization, Columns for layout, and Containers for organized content, we'll now explore how to deploy this same application in Snowflake using Streamlit in Snowflake (SiS). This will allow us to leverage Snowflake's data platform while maintaining our app's interactive features.</p>
+<p>In the next chapter, we will:</p>
+<ul>
+<li>Adapt our existing Streamlit app for Snowflake environment</li>
+<li>Configure necessary Snowflake connections</li>
+<li>Deploy and test our application using SiS</li>
+<li>Understand key differences between local and Snowflake deployment</li>
+</ul>
 
 
 
@@ -985,6 +995,46 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../data_prepration/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Data Prepration">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Data Prepration
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../snowflake_deploy/" class="md-footer__link md-footer__link--next" aria-label="Next: Deploy to Snowflake">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Deploy to Snowflake
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
@@ -1006,8 +1056,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.select", "content.code.annotate"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.select", "content.code.annotate", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.footer", "toc.follow"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
