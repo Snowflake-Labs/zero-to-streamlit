@@ -1,19 +1,19 @@
 # Exploring the Penguins Dataset with Streamlit
 
-In this chapter, we'll explore the [Penguins dataset](https://github.com/dataprofessor/data/blob/master/penguins_cleaned.csv) using Streamlit's interactive features. 
+In this chapter, we'll explore the Penguins dataset{:target=_blank} and use it as a base to build an interactive ML application using Streamlit.
 
 By the end of this chapter you will,
 
 - [x] Loading, preprocessing, and preparing the dataset for visualization
-- [x] Using Streamlit Expander to display dataset information and summary statistics
-- [x] Creating interactive scatter plots with Streamlit Scatter chart to identify patterns and relationships
-- [x] Enhancing the visualization with user interactions and filters
+- [x] Using Streamlit Expander to display:
+    * Dataset Information
+    * Machine Learning Model Features (**X**)
+    * Prediction Target(`species`) variable (**y**)
+- [x] Creating interactive scatter plots to identify patterns and relationships
 
-By the end of this chapter, you'll have a solid understanding of how to use Streamlit for data exploration and be ready to move on to building machine learning models.
+## Download Dataset
 
-## Download Datset
-
-Let us download the data locally,
+Let us download the dataset locally,
 
 ```shell
 mkdir -p "$TUTORIAL_HOME/data"
@@ -26,7 +26,7 @@ curl -sSL \
 
 Edit and update the `streamlit_app.py` with the following code,
 
-```py linenums="1" hl_lines="4 10-12"
+```py title="streamlit_app.py" linenums="1" hl_lines="4 10-12"
 import streamlit as st
 
 # import pandas to read the our data file
@@ -40,26 +40,11 @@ st.write("Welcome to world of Machine Learning with Streamlit.")
 df = pd.read_csv("data/penguins_cleaned.csv")
 df
 ```
-
-Stage, commit and push the code to the repository.
-
-```shell
-git add .
-git commit -a -m "Read and display data file"
-```
-
-Push the code to be deployed,
-
-```shell
-
-git push origin master
-```
-
-In few seconds you should notice the your application on Streamlit cloud refreshed with the changes.
+Stage, commit and push the code to the repository. In few seconds you should notice that your application on Streamlit Community Cloud refreshed with all your changes.
 
 ## Application Overview
 
-As part of this machine learning application, we will be building a simple classification model to predict penguin species (y) using input variables (X). Using Streamlit's interactive widgets, we'll display these variables to make our application user-friendly and intuitive.
+As part of this machine learning application, we will be building a simple classification model to predict Penguin species (**y**) using input variables (**X**). Using Streamlit's interactive widgets, we'll display these variables to make our application user-friendly and intuitive.
 
 This classification model will help us categorize penguins into their respective species based on their physical characteristics. The input variables and target variable will be presented through Streamlit's interface, allowing users to easily interact with and understand the prediction process.
 
@@ -67,9 +52,9 @@ This classification model will help us categorize penguins into their respective
 
 Let us add our first Streamlit widget [expander](https://docs.streamlit.io/develop/api-reference/layout/st.expander){:target="_blank"} to allow expand and collapse of the data frame.
 
-Edit and update the `streamlit_app.py` with the following code,
+Edit and update the `$TUTORIAL_HOME/streamlit_app.py` with the following code,
 
-```py linenums="1" hl_lines="10-14"
+```py title="streamlit_app.py" linenums="1" hl_lines="10-14"
 import streamlit as st
 
 # import pandas to read the our data file
@@ -88,11 +73,9 @@ with st.expander("Data"):
 
 ## Displaying the Variables
 
-Let us create and dsisplay the input features(**X**) and target(**y**).
+Let us create and display the input features(**X**) and target(**y**), edit and update the `$TUTORIAL_HOME/streamlit_app.py` with the following code,
 
-Edit and update the `streamlit_app.py` with the following code,
-
-```py linenums="1" hl_lines="16-22"
+```py title="streamlit_app.py" linenums="1" hl_lines="16-22"
 import streamlit as st
 
 # import pandas to read the our data file
@@ -109,8 +92,8 @@ with st.expander("Data"):
     df
     # define and display
     st.write("**X**")
-    x = df.drop("species",axis=1)
-    x
+    X = df.drop("species",axis=1)
+    X
 
     st.write("**y**")
     y = df.species
@@ -119,11 +102,9 @@ with st.expander("Data"):
 
 ## Data Visualization
 
-Let us visualize the penguins data using a [scatter plot](https://docs.streamlit.io/develop/api-reference/charts/st.scatter_chart){:target=_blank}
+Let us visualize the Penguins data using a [scatter plot](https://docs.streamlit.io/develop/api-reference/charts/st.scatter_chart){:target=_blank}, edit and update the `$TUTORIAL_HOME/streamlit_app.py` with the following code,
 
-Edit and update the `streamlit_app.py` with the following code,
-
-```py linenums="1" hl_lines="16-18 20-22 25-30"
+```py title="streamlit_app.py" linenums="1" hl_lines="16-18 20-22 25-30"
 import streamlit as st
 
 # import pandas to read the our data file

@@ -1,6 +1,12 @@
-site_name: "Streamlit 101: From Open Source to Snowflake Native Development"
-site_url: https://snowflake-labs.github.io/zero-to-streamlit/
-site_description: Getting started with Streamlit OSS and Streamlit in Snowflake.
+site_name:
+    "Bootstrapping Your Transition from Streamlit OSS to Streamlit in Snowflake
+    (SiS)"
+site_url: https://snowflake-labs.github.io/streamlit-oss-to-sis-bootstrap/
+site_description:
+    Bootstrap your transition from Streamlit OSS to Streamlit in Snowflake (SiS)
+    with this step-by-step tutorial and starter template. Migrate your Streamlit
+    app to Snowflake's powerful and scalable platform, and leverage
+    enterprise-grade features with ease.
 extra_css:
     - stylesheets/extra.css
 theme:
@@ -25,9 +31,9 @@ nav:
     - "Environment Setup": setup.md
     - "Deploy to Streamlit Cloud": deploy_to_streamlit_cloud.md
     - "Penguins App":
-          - "Exploring Dataset": datset.md
-          - "Interact with Application": interactivity.md
-          - "Data Prepration": data_prepration.md
+          - "Exploring Dataset": explore_dataset.md
+          - "Interact with Application": interactive_features.md
+          - "Data Preparation": data_preparation.md
           - "Training and Prediction": train_and_predict.md
     - "Streamlit in  Snowflake":
           - "Deploy to Snowflake": snowflake_deploy.md
@@ -38,11 +44,13 @@ markdown_extensions:
           permalink: "&para;"
     - admonition
     - attr_list
+    - def_list
     - footnotes
     - pymdownx.highlight:
           anchor_linenums: true
           line_spans: __span
           pygments_lang_class: true
+          use_pygments: true
     - pymdownx.betterem
     - pymdownx.caret
     - pymdownx.mark

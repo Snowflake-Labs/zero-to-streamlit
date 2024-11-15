@@ -1,5 +1,3 @@
-# Interactivity
-
 # Interactive Features
 
 In this chapter, we'll discover how to add user interactivity to our application using Streamlit widgets:
@@ -10,13 +8,13 @@ In this chapter, we'll discover how to add user interactivity to our application
 - [⚡ Radio buttons](https://docs.streamlit.io/library/api-reference/widgets/st.radio){:target="_blank"} for making single-choice selections
 - [⚡ Checkbox](https://docs.streamlit.io/library/api-reference/widgets/st.checkbox){:target="_blank"} for toggle options
 
-These widgets will allow users to dynamically modify feature values, which will then update our model's predictions in real-time.
+These widgets will allow users to dynamically modify model feature values, which will then update our model's predictions in real-time.
 
-## Build Sidebar
+## Build a Sidebar
 
-Let's build the sidebar with widgets to filter the input features. We'll edit and update the streamlit_app.py with the following code:
+Streamlit's sidebar provides a convenient way for users to interactively filter and select input features for our machine learning model, enhancing the app's functionality and user experience. To implement this, let's update the `$TUTORIAL_HOME/streamlit_app.py` file with the following code:
 
-```py linenums="1" hl_lines="39-43 50-54 62-66 74-79 86-91 93-96"
+```py title="streamlit_app.py" linenums="1" hl_lines="39-43 50-54 62-66 74-79 86-91 93-96"
 import streamlit as st
 
 # import pandas to read the our data file
@@ -48,7 +46,7 @@ with st.expander("Data Visualization"):
         color="species",
     )
 
-# Ineractivity
+# Interactivity
 # Columns:
 # 'species', 'island', 'bill_length_mm', 'bill_depth_mm',
 # 'flipper_length_mm', 'body_mass_g', 'sex'
@@ -117,11 +115,11 @@ with st.sidebar:
 
 ## Feature Data Preprocessing
 
-Create a DataFrame from user input and combine it with existing penguin data using pd.concat, ensuring the new data undergoes the same preprocessing steps as our training data.
+We will now filter the `data` DataFrame based on the selected features and use [`pd.concat`](https://pandas.pydata.org/docs/reference/api/pandas.concat.html){:target=_blank}, ensuring the new data undergoes the same preprocessing steps as our training data.
 
-Edit and update the `streamlit_app.py` with the following code,
+Edit and update the `$TUTORIAL_HOME/streamlit_app.py` with the following code,
 
-```py linenums="1" hl_lines="99-114"
+```py title="streamlit_app.py" linenums="1" hl_lines="99-114"
 import streamlit as st
 
 # import pandas to read the our data file
@@ -153,7 +151,7 @@ with st.expander("Data Visualization"):
         color="species",
     )
 
-# Ineractivity
+# Interactivity
 # Columns:
 # 'species', 'island', 'bill_length_mm', 'bill_depth_mm',
 # 'flipper_length_mm', 'body_mass_g', 'sex'
@@ -242,5 +240,5 @@ Now that we've prepared our input data, let's handle the categorical variables u
 
 Helpful resources for encoding:
 
-- Scikit-learn encoding guide: https://scikit-learn.org/stable/modules/preprocessing.html#encoding-categorical-features
-- Pandas get_dummies documentation: https://pandas.pydata.org/docs/reference/api/pandas.get_dummies.html
+- Scikit-learn encoding guide: <https://scikit-learn.org/stable/modules/preprocessing.html#encoding-categorical-features>{:target=_blank}
+- Pandas `get_dummies` documentation: <https://pandas.pydata.org/docs/reference/api/pandas.get_dummies.html>{:target=_blank}

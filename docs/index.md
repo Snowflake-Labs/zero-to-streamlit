@@ -1,39 +1,50 @@
-# Streamlit 101: From Open Source to Snowflake Native Development
+# Bootstrapping Your Transition from Streamlit OSS to Streamlit in Snowflake(SiS)
 
 ## Get Ready to Build!
-Ready to transform a simple Streamlit application into an enterprise-grade solution in Snowflake? In this hands-on tutorial, you'll explore Streamlit's versatility while building an interactive data application. Using a Machine Learning example, you'll discover how easily Streamlit can evolve from your local machine to a fully integrated Snowflake application.
+Ready to transform a simple Streamlit application into an enterprise-grade solution in to SiS? In this hands-on tutorial, you'll explore Streamlit's versatility while building an interactive data application. Using a Machine Learning example, you'll discover how easily Streamlit can evolve from your local machine to a fully integrated Snowflake application.
 
 ## What You'll Build
 
-Your journey will take you through the complete Streamlit development lifecycle. Starting locally, you'll progress to cloud deployment, and finally integrate with Snowflake. Get ready to unlock Streamlit's powerful features at each stage!
+Your journey will take you through the complete Streamlit development lifecycle. Starting locally, you'll progress to Streamlit OSS cloud deployment, and finally integrate with Snowflake. Get ready to unlock Streamlit's powerful features at each stage!
+
+!!!NOTE
+    This tutorial is adapted from <https://www.youtube.com/watch?v=LJ6DcLGQ4vY>{:target=_blank}
 
 ## Your Development Journey
 
-1. **Start with Streamlit Local Development**
-    - Create your first interactive web application with Streamlit's components
-    - Set up data handling and visualization features
-    - Discover Streamlit's intuitive widget system
-    - Learn application state management
+Here's your bulleted list with emojis that match each section:
 
-2. **Deploy to Streamlit Cloud**
-    - Launch your application to the cloud
-    - Master deployment best practices
-    - Handle dependencies like a pro
+🚀 **Start with Streamlit Local Development**
 
-3. **Connect to Snowflake**
-    - Level up your app with Snowflake connectivity
-    - Implement smart data access patterns
-    - Set up secure connections
+- Create your first interactive web application with [Streamlit](https://streamlit.io){:target=_blank}'s components
+- Set up data handling and visualization features
+- Discover Streamlit's intuitive widget system
+- Learn application state management
 
-4. **Go Native with Streamlit in Snowflake**
-    - Deploy directly in Snowflake
-    - Adapt your code seamlessly
-    - Leverage enterprise-grade security
+☁️ **Deploy to Streamlit Community Cloud**
 
-5. **Explore Snowflake Notebooks**
-    - Rebuild your app in a new environment
-    - Combine notebook analytics with Streamlit
-    - Discover alternative development approaches
+- Launch your application to the cloud
+- Master deployment best practices
+- Handle dependencies like a pro
+
+❄️ **Connect to Snowflake**
+
+- Level up your app with [Snowflake](https://snowflake.com){:target=_blank} connectivity
+- Set up secure connections
+- Leverage [Snowpark Python](https://docs.snowflake.com/en/developer-guide/snowpark/python/index){:target=_blank}
+- Deploy the application right from your command line using [Snowflake CLI](https://docs.snowflake.com/en/developer-guide/snowflake-cli/index){:target=_blank}
+
+🏢 **Go Native with Streamlit in Snowflake**
+    
+- Deploy directly in Snowflake
+- Adapt your code seamlessly
+- Leverage enterprise-grade security
+
+📓 **Explore Snowflake Notebooks**
+
+- Rebuild your app in a new environment
+- Combine notebook analytics with Streamlit
+- Discover alternative development approaches
 
 ## What You'll Achieve
 
@@ -48,11 +59,15 @@ Watch your Streamlit application evolve:
 
 By the end of this tutorial, you'll:
 
-- Command Streamlit's core features
-- Master multiple deployment options
-- Integrate seamlessly with Snowflake
-- Explore various development environments
-- Create production-ready applications
+🎯 Command Streamlit's core features
+
+🚀 Master multiple deployment options
+
+❄️ Integrate seamlessly with Snowflake
+
+🔍 Explore various development environments
+
+⚡ Create production-ready applications
 
 Ready to begin? Let's start your journey from local Streamlit development to deploying enterprise-ready applications in Snowflake! 
 

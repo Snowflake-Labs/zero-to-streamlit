@@ -22,7 +22,7 @@ In this chapter, we will:
 ### Database
 
 !!!IMPORTANT
-    It is assumed that Snowflake CLI has been installed and you have teste your snowflake connection.
+    It is assumed that Snowflake CLI has been installed and you have test your snowflake connection.
 
     Set your default connection name using 
 
@@ -39,7 +39,7 @@ In this chapter, we will:
 
 For this demo all our Snowflake objects will be housed in a DB called `st_ml_app`.
 
-Create the database
+Create the Database
 
 ```shell
 snow object create database \
@@ -51,7 +51,6 @@ snow object create database \
 
 Let us create one schema to hold the notebooks.
 
-
 ```shell
 # notebooks
 snow object create schema \
@@ -59,9 +58,9 @@ snow object create schema \
   --database='st_ml_app'
 ```
 
-Download and import the [notebook](./notebooks/sis_setup.ipynb) and follow the instructions on the notebook to prepare the environment for deployment.
+Download and import the [notebook](https://github.com/Snowflake-Labs/streamlit-oss-to-sis-bootstrap/blob/main/notebooks/sis_setup.ipynb){:target=_blank} and follow the instructions on the notebook to prepare the environment for deployment.
 
-## Deployin the App
+## Deploying the App
 
 ### Create Streamlit Project
 
@@ -77,15 +76,14 @@ snow init sis --template example_streamlit
 
 ### Update the App 
 
+__TODO__: Note on Copy
+
 Edit and update the `$TUTORIAL_HOME/sis/streamlit_app.py` with,
 
-```py linenums="1" hl_lines="8-10 13-24 27 37-48"
+```py title="streamlit_app.py" linenums="1" hl_lines="4-7 10-24 24 34-45"
 import streamlit as st
 import os
 
-# import pandas to read the our data file
-import pandas as pd
-import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from snowflake.snowpark.session import Session
 from snowflake.snowpark.functions import col
@@ -145,7 +143,7 @@ with st.expander("Data Visualization"):
         color="species",
     )
 
-# Ineractivity
+# Interactivity
 # Columns:
 # 'species', 'island', 'bill_length_mm', 'bill_depth_mm',
 # 'flipper_length_mm', 'body_mass_g', 'sex'
@@ -211,7 +209,7 @@ with st.sidebar:
         ("male", "female"),
     )
 
-# Dataframes for Input features
+# Dataframe for Input features
 data = {
     "island": island,
     "bill_length_mm": bill_length_mm,
@@ -229,7 +227,7 @@ with st.expander("Input Features"):
     st.write("**Combined Penguins Data**")
     input_penguins
 
-## Data Prepration
+## Data Preparation
 
 ## Encode X
 X_encode = ["island", "sex"]
@@ -316,7 +314,7 @@ st.success(p_cols[prediction[0]])
 
 Edit and update `$TUTORIAL_HOME/sis/environment.yml` to be like, ensuring that the packages used locally and in Snowflake are same.
 
-```yaml
+```yaml title="environment.yml" linenums="1"
 name: sf_env
 channels:
   - snowflake
@@ -330,17 +328,17 @@ dependencies:
 
 ### Verify Project Manifest
 
-Edit and updat the Project [manifest](https://docs.snowflake.com/en/developer-guide/snowflake-cli/native-apps/project-definitions){:target=_blank} `$TUTORIAL_HOME/sis/snowflake.yml` to be inline with your settings, especially 
+Edit and update the Project [manifest](https://docs.snowflake.com/en/developer-guide/snowflake-cli/native-apps/project-definitions){:target=_blank} `$TUTORIAL_HOME/sis/snowflake.yml` to be inline with your settings, especially 
 
 - `name`
 - `main_file`
 - `query_warehouse`
 - `artifacts`
 
-!!! NOTE
-    If you have followed along the tutorial as is without any changes the only that you might need to change is `query_warehouse`. If you are using trial account then update it to `compute_wh`.
+!!! WARNING "IMPORTANT"
+    If you have followed along the tutorial as is without any changes the only that you might need to change is `query_warehouse`. If you are using trial account then update it to `COMPUTE_WH`.
 
-```yaml linenums="1" hl_lines="6-8 10-12"
+```yaml title="snowflake.yml" linenums="1" hl_lines="6-8 10-12"
 definition_version: "2"
 entities:
   streamlit_penguin:
@@ -361,7 +359,7 @@ Navigate to the application(**sis**) folder,
 ```shell
 cd sis
 ```
-Run the following command to deploy the streamlit application to Snowflake,
+Run the following command to deploy the Streamlit application to Snowflake,
 
 !!!NOTE
     The output of the command displays the URL to access the application. In case you missed to note run the following command,
@@ -380,4 +378,4 @@ There you go we have seamlessly deployed the application to SiS with a very litt
 ## Summary
 This chapter guided you through the process of transforming a locally running Streamlit application into a production-ready deployment within Snowflake. You learned the essential modifications needed for Snowflake compatibility, understood the configuration requirements, and mastered the deployment process. You now have a fully functional Streamlit application running in Snowflake's secure environment, accessible to your organization's users through Snowflake's interface.
 
-> **Pro Tip**: You can run this entire application using Snowflake Notebook. Download and import the [environmant](../notebooks/environment.yml) and [application notebook](../notebooks/streamlit_penguin_app.ipynb) and experience the Snowflake Notebook magic! 🚀
+> **Pro Tip**: You can run this entire application using Snowflake Notebook. Download and import the [environment.yml](https://github.com/Snowflake-Labs/streamlit-oss-to-sis-bootstrap/blob/main/notebooks/environment.yml){:target=_blank} and [application notebook](https://github.com/Snowflake-Labs/streamlit-oss-to-sis-bootstrap/blob/main/notebooks/streamlit_penguin_app.ipynb){:target=_blank} and experience the Snowflake Notebook magic! 🚀

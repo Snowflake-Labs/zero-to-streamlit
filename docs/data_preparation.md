@@ -3,10 +3,12 @@
 Before applying our machine learning model, we need to convert categorical variables into numerical format using One-Hot[^1] Encoding. In our penguin dataset, we'll use pandas `get_dummies()`[^2] to encode:
 
 **Features (X):**
+
 - [x] `island` - Categorical location of penguin
 - [x] `sex` - Gender of penguin
 
 **Target (y):**
+
 - [x] `species` - Type of penguin (our prediction target)
 
 📝 **One-Hot Encoding** converts categorical variables into binary (0 or 1) format. For example:
@@ -17,13 +19,11 @@ Before applying our machine learning model, we need to convert categorical varia
 # island_Biscoe    = [0, 1]
 ```
 
-## Encode Features and Target
+## Encoding Features and Target
 
-__TODO__: explain what we are doing here 
+Edit and update the `$TUTORIAL_HOME/streamlit_app.py` with the following code,
 
-Edit and update the `streamlit_app.py` with the following code,
-
-```py linenums="1" hl_lines="119-121 124-135 137-141"
+```py title="streamlit_app.py" linenums="1" hl_lines="119-121 124-135 137-141"
 import streamlit as st
 
 # import pandas to read the our data file
@@ -55,7 +55,7 @@ with st.expander("Data Visualization"):
         color="species",
     )
 
-# Ineractivity
+# Interactivity
 # Columns:
 # 'species', 'island', 'bill_length_mm', 'bill_depth_mm',
 # 'flipper_length_mm', 'body_mass_g', 'sex'
@@ -91,7 +91,7 @@ with st.sidebar:
         max_value=max,
         value=mean,
     )
-    # Filpper Length
+    # Flipper Length
     min, max, mean = (
         df.flipper_length_mm.min().astype(float),
         df.flipper_length_mm.max().astype(float),
@@ -121,7 +121,7 @@ with st.sidebar:
         ("male", "female"),
     )
 
-# Dataframes for Input features
+# DataFrames for Input features
 data = {
     "island": island,
     "bill_length_mm": bill_length_mm,
@@ -139,7 +139,7 @@ with st.expander("Input Features"):
     st.write("**Combined Penguins Data**")
     input_penguins
 
-## Data Prepration
+## Data Preparation
 
 ## Encode X
 X_encode = ["island", "sex"]
