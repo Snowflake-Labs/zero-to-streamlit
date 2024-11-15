@@ -6,17 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Getting started with Streamlit OSS and Streamlit in Snowflake.">
+        <meta name="description" content="Bootstrap your transition from Streamlit OSS to Streamlit in Snowflake (SiS) with this step-by-step tutorial and starter template. Migrate your Streamlit app to Snowflake's powerful and scalable platform, and leverage enterprise-grade features with ease.">
       
       
       
-        <link rel="canonical" href="https://snowflake-labs.github.io/zero-to-streamlit/interactivity/">
+        <link rel="canonical" href="https://snowflake-labs.github.io/streamlit-oss-to-sis-bootstrap/data_preparation/">
       
       
-        <link rel="prev" href="../datset/">
+        <link rel="prev" href="../interactive_features/">
       
       
-        <link rel="next" href="../data_prepration/">
+        <link rel="next" href="../train_and_predict/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Interact with Application - Streamlit 101: From Open Source to Snowflake Native Development</title>
+        <title>Data Preparation - Bootstrapping Your Transition from Streamlit OSS to Streamlit in Snowflake (SiS)</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#interactivity" class="md-skip">
+        <a href="#data-preparation" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Streamlit 101: From Open Source to Snowflake Native Development" class="md-header__button md-logo" aria-label="Streamlit 101: From Open Source to Snowflake Native Development" data-md-component="logo">
+    <a href=".." title="Bootstrapping Your Transition from Streamlit OSS to Streamlit in Snowflake (SiS)" class="md-header__button md-logo" aria-label="Bootstrapping Your Transition from Streamlit OSS to Streamlit in Snowflake (SiS)" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -106,13 +106,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Streamlit 101: From Open Source to Snowflake Native Development
+            Bootstrapping Your Transition from Streamlit OSS to Streamlit in Snowflake (SiS)
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Interact with Application
+              Data Preparation
             
           </span>
         </div>
@@ -150,13 +150,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Streamlit 101: From Open Source to Snowflake Native Development" class="md-nav__button md-logo" aria-label="Streamlit 101: From Open Source to Snowflake Native Development" data-md-component="logo">
+    <a href=".." title="Bootstrapping Your Transition from Streamlit OSS to Streamlit in Snowflake (SiS)" class="md-nav__button md-logo" aria-label="Bootstrapping Your Transition from Streamlit OSS to Streamlit in Snowflake (SiS)" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Streamlit 101: From Open Source to Snowflake Native Development
+    Bootstrapping Your Transition from Streamlit OSS to Streamlit in Snowflake (SiS)
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -265,11 +265,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../datset/" class="md-nav__link">
+      <a href="../explore_dataset/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exploring Dataset
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interactive_features/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interact with Application
   </span>
   
 
@@ -295,37 +316,55 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Data Preparation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Interact with Application
+    Data Preparation
   </span>
   
 
       </a>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../data_prepration/" class="md-nav__link">
         
-  
-  <span class="md-ellipsis">
-    Data Prepration
-  </span>
-  
 
-      </a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#encoding-features-and-target" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encoding Features and Target
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -462,6 +501,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#encoding-features-and-target" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encoding Features and Target
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -475,215 +531,26 @@
                   
 
 
-<h1 id="interactivity">Interactivity<a class="headerlink" href="#interactivity" title="Permanent link">&para;</a></h1>
-<h1 id="interactive-features">Interactive Features<a class="headerlink" href="#interactive-features" title="Permanent link">&para;</a></h1>
-<p>In this chapter, we'll discover how to add user interactivity to our application using Streamlit widgets:</p>
-<ul>
-<li><a href="https://docs.streamlit.io/library/api-reference/layout/st.sidebar" target="_blank">⚡ Sidebar</a> for organizing widgets in a collapsible panel</li>
-<li><a href="https://docs.streamlit.io/library/api-reference/widgets/st.selectbox" target="_blank">⚡ Select box</a> for choosing categorical features</li>
-<li><a href="https://docs.streamlit.io/library/api-reference/widgets/st.slider" target="_blank">⚡ Slider</a> for adjusting numerical values</li>
-<li><a href="https://docs.streamlit.io/library/api-reference/widgets/st.radio" target="_blank">⚡ Radio buttons</a> for making single-choice selections</li>
-<li><a href="https://docs.streamlit.io/library/api-reference/widgets/st.checkbox" target="_blank">⚡ Checkbox</a> for toggle options</li>
+<h1 id="data-preparation">Data Preparation<a class="headerlink" href="#data-preparation" title="Permanent link">&para;</a></h1>
+<p>Before applying our machine learning model, we need to convert categorical variables into numerical format using One-Hot<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> Encoding. In our penguin dataset, we'll use pandas <code>get_dummies()</code><sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> to encode:</p>
+<p><strong>Features (X):</strong></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <code>island</code> - Categorical location of penguin</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <code>sex</code> - Gender of penguin</li>
 </ul>
-<p>These widgets will allow users to dynamically modify feature values, which will then update our model's predictions in real-time.</p>
-<h2 id="build-sidebar">Build Sidebar<a class="headerlink" href="#build-sidebar" title="Permanent link">&para;</a></h2>
-<p>Let's build the sidebar with widgets to filter the input features. We'll edit and update the streamlit_app.py with the following code:</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-0-10">10</a></span>
-<span class="normal"><a href="#__codelineno-0-11">11</a></span>
-<span class="normal"><a href="#__codelineno-0-12">12</a></span>
-<span class="normal"><a href="#__codelineno-0-13">13</a></span>
-<span class="normal"><a href="#__codelineno-0-14">14</a></span>
-<span class="normal"><a href="#__codelineno-0-15">15</a></span>
-<span class="normal"><a href="#__codelineno-0-16">16</a></span>
-<span class="normal"><a href="#__codelineno-0-17">17</a></span>
-<span class="normal"><a href="#__codelineno-0-18">18</a></span>
-<span class="normal"><a href="#__codelineno-0-19">19</a></span>
-<span class="normal"><a href="#__codelineno-0-20">20</a></span>
-<span class="normal"><a href="#__codelineno-0-21">21</a></span>
-<span class="normal"><a href="#__codelineno-0-22">22</a></span>
-<span class="normal"><a href="#__codelineno-0-23">23</a></span>
-<span class="normal"><a href="#__codelineno-0-24">24</a></span>
-<span class="normal"><a href="#__codelineno-0-25">25</a></span>
-<span class="normal"><a href="#__codelineno-0-26">26</a></span>
-<span class="normal"><a href="#__codelineno-0-27">27</a></span>
-<span class="normal"><a href="#__codelineno-0-28">28</a></span>
-<span class="normal"><a href="#__codelineno-0-29">29</a></span>
-<span class="normal"><a href="#__codelineno-0-30">30</a></span>
-<span class="normal"><a href="#__codelineno-0-31">31</a></span>
-<span class="normal"><a href="#__codelineno-0-32">32</a></span>
-<span class="normal"><a href="#__codelineno-0-33">33</a></span>
-<span class="normal"><a href="#__codelineno-0-34">34</a></span>
-<span class="normal"><a href="#__codelineno-0-35">35</a></span>
-<span class="normal"><a href="#__codelineno-0-36">36</a></span>
-<span class="normal"><a href="#__codelineno-0-37">37</a></span>
-<span class="normal"><a href="#__codelineno-0-38">38</a></span>
-<span class="normal"><a href="#__codelineno-0-39">39</a></span>
-<span class="normal"><a href="#__codelineno-0-40">40</a></span>
-<span class="normal"><a href="#__codelineno-0-41">41</a></span>
-<span class="normal"><a href="#__codelineno-0-42">42</a></span>
-<span class="normal"><a href="#__codelineno-0-43">43</a></span>
-<span class="normal"><a href="#__codelineno-0-44">44</a></span>
-<span class="normal"><a href="#__codelineno-0-45">45</a></span>
-<span class="normal"><a href="#__codelineno-0-46">46</a></span>
-<span class="normal"><a href="#__codelineno-0-47">47</a></span>
-<span class="normal"><a href="#__codelineno-0-48">48</a></span>
-<span class="normal"><a href="#__codelineno-0-49">49</a></span>
-<span class="normal"><a href="#__codelineno-0-50">50</a></span>
-<span class="normal"><a href="#__codelineno-0-51">51</a></span>
-<span class="normal"><a href="#__codelineno-0-52">52</a></span>
-<span class="normal"><a href="#__codelineno-0-53">53</a></span>
-<span class="normal"><a href="#__codelineno-0-54">54</a></span>
-<span class="normal"><a href="#__codelineno-0-55">55</a></span>
-<span class="normal"><a href="#__codelineno-0-56">56</a></span>
-<span class="normal"><a href="#__codelineno-0-57">57</a></span>
-<span class="normal"><a href="#__codelineno-0-58">58</a></span>
-<span class="normal"><a href="#__codelineno-0-59">59</a></span>
-<span class="normal"><a href="#__codelineno-0-60">60</a></span>
-<span class="normal"><a href="#__codelineno-0-61">61</a></span>
-<span class="normal"><a href="#__codelineno-0-62">62</a></span>
-<span class="normal"><a href="#__codelineno-0-63">63</a></span>
-<span class="normal"><a href="#__codelineno-0-64">64</a></span>
-<span class="normal"><a href="#__codelineno-0-65">65</a></span>
-<span class="normal"><a href="#__codelineno-0-66">66</a></span>
-<span class="normal"><a href="#__codelineno-0-67">67</a></span>
-<span class="normal"><a href="#__codelineno-0-68">68</a></span>
-<span class="normal"><a href="#__codelineno-0-69">69</a></span>
-<span class="normal"><a href="#__codelineno-0-70">70</a></span>
-<span class="normal"><a href="#__codelineno-0-71">71</a></span>
-<span class="normal"><a href="#__codelineno-0-72">72</a></span>
-<span class="normal"><a href="#__codelineno-0-73">73</a></span>
-<span class="normal"><a href="#__codelineno-0-74">74</a></span>
-<span class="normal"><a href="#__codelineno-0-75">75</a></span>
-<span class="normal"><a href="#__codelineno-0-76">76</a></span>
-<span class="normal"><a href="#__codelineno-0-77">77</a></span>
-<span class="normal"><a href="#__codelineno-0-78">78</a></span>
-<span class="normal"><a href="#__codelineno-0-79">79</a></span>
-<span class="normal"><a href="#__codelineno-0-80">80</a></span>
-<span class="normal"><a href="#__codelineno-0-81">81</a></span>
-<span class="normal"><a href="#__codelineno-0-82">82</a></span>
-<span class="normal"><a href="#__codelineno-0-83">83</a></span>
-<span class="normal"><a href="#__codelineno-0-84">84</a></span>
-<span class="normal"><a href="#__codelineno-0-85">85</a></span>
-<span class="normal"><a href="#__codelineno-0-86">86</a></span>
-<span class="normal"><a href="#__codelineno-0-87">87</a></span>
-<span class="normal"><a href="#__codelineno-0-88">88</a></span>
-<span class="normal"><a href="#__codelineno-0-89">89</a></span>
-<span class="normal"><a href="#__codelineno-0-90">90</a></span>
-<span class="normal"><a href="#__codelineno-0-91">91</a></span>
-<span class="normal"><a href="#__codelineno-0-92">92</a></span>
-<span class="normal"><a href="#__codelineno-0-93">93</a></span>
-<span class="normal"><a href="#__codelineno-0-94">94</a></span>
-<span class="normal"><a href="#__codelineno-0-95">95</a></span>
-<span class="normal"><a href="#__codelineno-0-96">96</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">import</span> <span class="nn">streamlit</span> <span class="k">as</span> <span class="nn">st</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="c1"># import pandas to read the our data file</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="n">st</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;🤖 Machine Learning App&quot;</span><span class="p">)</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Welcome to world of Machine Learning with Streamlit.&quot;</span><span class="p">)</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="k">with</span> <span class="n">st</span><span class="o">.</span><span class="n">expander</span><span class="p">(</span><span class="s2">&quot;Data&quot;</span><span class="p">):</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a>    <span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;**Raw Data**&quot;</span><span class="p">)</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a>    <span class="c1"># read the csv file</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a>    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/penguins_cleaned.csv&quot;</span><span class="p">)</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a>    <span class="n">df</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a>    <span class="c1"># define and display</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a>    <span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;**X**&quot;</span><span class="p">)</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a>    <span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;species&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a>    <span class="n">X</span>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19"></a>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20"></a>    <span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;**y**&quot;</span><span class="p">)</span>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21"></a>    <span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">species</span>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22"></a>    <span class="n">y</span>
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23"></a>
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="k">with</span> <span class="n">st</span><span class="o">.</span><span class="n">expander</span><span class="p">(</span><span class="s2">&quot;Data Visualization&quot;</span><span class="p">):</span>
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25"></a>    <span class="n">st</span><span class="o">.</span><span class="n">scatter_chart</span><span class="p">(</span>
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26"></a>        <span class="n">df</span><span class="p">,</span>
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27"></a>        <span class="n">x</span><span class="o">=</span><span class="s2">&quot;bill_length_mm&quot;</span><span class="p">,</span>
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28"></a>        <span class="n">y</span><span class="o">=</span><span class="s2">&quot;body_mass_g&quot;</span><span class="p">,</span>
-</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29"></a>        <span class="n">color</span><span class="o">=</span><span class="s2">&quot;species&quot;</span><span class="p">,</span>
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30"></a>    <span class="p">)</span>
-</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31"></a>
-</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32"></a><span class="c1"># Ineractivity</span>
-</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33"></a><span class="c1"># Columns:</span>
-</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34"></a><span class="c1"># &#39;species&#39;, &#39;island&#39;, &#39;bill_length_mm&#39;, &#39;bill_depth_mm&#39;,</span>
-</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35"></a><span class="c1"># &#39;flipper_length_mm&#39;, &#39;body_mass_g&#39;, &#39;sex&#39;</span>
-</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36"></a><span class="k">with</span> <span class="n">st</span><span class="o">.</span><span class="n">sidebar</span><span class="p">:</span>
-</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37"></a>    <span class="n">st</span><span class="o">.</span><span class="n">header</span><span class="p">(</span><span class="s2">&quot;Input Features&quot;</span><span class="p">)</span>
-</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38"></a>    <span class="c1"># Islands</span>
-</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39"></a><span class="hll">    <span class="n">islands</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">island</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
-</span></span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40"></a><span class="hll">    <span class="n">island</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">selectbox</span><span class="p">(</span>
-</span></span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41"></a><span class="hll">        <span class="s2">&quot;Island&quot;</span><span class="p">,</span>
-</span></span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42"></a><span class="hll">        <span class="n">islands</span><span class="p">,</span>
-</span></span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43"></a><span class="hll">    <span class="p">)</span>
-</span></span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44"></a>    <span class="c1"># Bill Length</span>
-</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45"></a>    <span class="nb">min</span><span class="p">,</span> <span class="nb">max</span><span class="p">,</span> <span class="n">mean</span> <span class="o">=</span> <span class="p">(</span>
-</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46"></a>        <span class="n">df</span><span class="o">.</span><span class="n">bill_length_mm</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span>
-</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47"></a>        <span class="n">df</span><span class="o">.</span><span class="n">bill_length_mm</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span>
-</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48"></a>        <span class="n">df</span><span class="o">.</span><span class="n">bill_length_mm</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span>
-</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49"></a>    <span class="p">)</span>
-</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50"></a><span class="hll">    <span class="n">bill_length_mm</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">slider</span><span class="p">(</span>
-</span></span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51"></a><span class="hll">        <span class="s2">&quot;Bill Length(mm)&quot;</span><span class="p">,</span>
-</span></span><span id="__span-0-52"><a id="__codelineno-0-52" name="__codelineno-0-52"></a><span class="hll">        <span class="n">min_value</span><span class="o">=</span><span class="nb">min</span><span class="p">,</span>
-</span></span><span id="__span-0-53"><a id="__codelineno-0-53" name="__codelineno-0-53"></a><span class="hll">        <span class="n">max_value</span><span class="o">=</span><span class="nb">max</span><span class="p">,</span>
-</span></span><span id="__span-0-54"><a id="__codelineno-0-54" name="__codelineno-0-54"></a><span class="hll">        <span class="n">value</span><span class="o">=</span><span class="n">mean</span><span class="p">,</span>
-</span></span><span id="__span-0-55"><a id="__codelineno-0-55" name="__codelineno-0-55"></a>    <span class="p">)</span>
-</span><span id="__span-0-56"><a id="__codelineno-0-56" name="__codelineno-0-56"></a>    <span class="c1"># Bill Depth</span>
-</span><span id="__span-0-57"><a id="__codelineno-0-57" name="__codelineno-0-57"></a>    <span class="nb">min</span><span class="p">,</span> <span class="nb">max</span><span class="p">,</span> <span class="n">mean</span> <span class="o">=</span> <span class="p">(</span>
-</span><span id="__span-0-58"><a id="__codelineno-0-58" name="__codelineno-0-58"></a>        <span class="n">df</span><span class="o">.</span><span class="n">bill_depth_mm</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span>
-</span><span id="__span-0-59"><a id="__codelineno-0-59" name="__codelineno-0-59"></a>        <span class="n">df</span><span class="o">.</span><span class="n">bill_depth_mm</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span>
-</span><span id="__span-0-60"><a id="__codelineno-0-60" name="__codelineno-0-60"></a>        <span class="n">df</span><span class="o">.</span><span class="n">bill_depth_mm</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span>
-</span><span id="__span-0-61"><a id="__codelineno-0-61" name="__codelineno-0-61"></a>    <span class="p">)</span>
-</span><span id="__span-0-62"><a id="__codelineno-0-62" name="__codelineno-0-62"></a><span class="hll">    <span class="n">bill_depth_mm</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">slider</span><span class="p">(</span>
-</span></span><span id="__span-0-63"><a id="__codelineno-0-63" name="__codelineno-0-63"></a><span class="hll">        <span class="s2">&quot;Bill Depth(mm)&quot;</span><span class="p">,</span>
-</span></span><span id="__span-0-64"><a id="__codelineno-0-64" name="__codelineno-0-64"></a><span class="hll">        <span class="n">min_value</span><span class="o">=</span><span class="nb">min</span><span class="p">,</span>
-</span></span><span id="__span-0-65"><a id="__codelineno-0-65" name="__codelineno-0-65"></a><span class="hll">        <span class="n">max_value</span><span class="o">=</span><span class="nb">max</span><span class="p">,</span>
-</span></span><span id="__span-0-66"><a id="__codelineno-0-66" name="__codelineno-0-66"></a><span class="hll">        <span class="n">value</span><span class="o">=</span><span class="n">mean</span><span class="p">,</span>
-</span></span><span id="__span-0-67"><a id="__codelineno-0-67" name="__codelineno-0-67"></a>    <span class="p">)</span>
-</span><span id="__span-0-68"><a id="__codelineno-0-68" name="__codelineno-0-68"></a>    <span class="c1"># Filpper Length</span>
-</span><span id="__span-0-69"><a id="__codelineno-0-69" name="__codelineno-0-69"></a>    <span class="nb">min</span><span class="p">,</span> <span class="nb">max</span><span class="p">,</span> <span class="n">mean</span> <span class="o">=</span> <span class="p">(</span>
-</span><span id="__span-0-70"><a id="__codelineno-0-70" name="__codelineno-0-70"></a>        <span class="n">df</span><span class="o">.</span><span class="n">flipper_length_mm</span><span class="o">.</span><span class="n">min</span><span class="p">()</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">),</span>
-</span><span id="__span-0-71"><a id="__codelineno-0-71" name="__codelineno-0-71"></a>        <span class="n">df</span><span class="o">.</span><span class="n">flipper_length_mm</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">),</span>
-</span><span id="__span-0-72"><a id="__codelineno-0-72" name="__codelineno-0-72"></a>        <span class="n">df</span><span class="o">.</span><span class="n">flipper_length_mm</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span>
-</span><span id="__span-0-73"><a id="__codelineno-0-73" name="__codelineno-0-73"></a>    <span class="p">)</span>
-</span><span id="__span-0-74"><a id="__codelineno-0-74" name="__codelineno-0-74"></a><span class="hll">    <span class="n">flipper_length_mm</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">slider</span><span class="p">(</span>
-</span></span><span id="__span-0-75"><a id="__codelineno-0-75" name="__codelineno-0-75"></a><span class="hll">        <span class="s2">&quot;Flipper Length(mm)&quot;</span><span class="p">,</span>
-</span></span><span id="__span-0-76"><a id="__codelineno-0-76" name="__codelineno-0-76"></a><span class="hll">        <span class="n">min_value</span><span class="o">=</span><span class="nb">min</span><span class="p">,</span>
-</span></span><span id="__span-0-77"><a id="__codelineno-0-77" name="__codelineno-0-77"></a><span class="hll">        <span class="n">max_value</span><span class="o">=</span><span class="nb">max</span><span class="p">,</span>
-</span></span><span id="__span-0-78"><a id="__codelineno-0-78" name="__codelineno-0-78"></a><span class="hll">        <span class="n">value</span><span class="o">=</span><span class="n">mean</span><span class="p">,</span>
-</span></span><span id="__span-0-79"><a id="__codelineno-0-79" name="__codelineno-0-79"></a><span class="hll">    <span class="p">)</span>
-</span></span><span id="__span-0-80"><a id="__codelineno-0-80" name="__codelineno-0-80"></a>    <span class="c1"># Body Mass</span>
-</span><span id="__span-0-81"><a id="__codelineno-0-81" name="__codelineno-0-81"></a>    <span class="nb">min</span><span class="p">,</span> <span class="nb">max</span><span class="p">,</span> <span class="n">mean</span> <span class="o">=</span> <span class="p">(</span>
-</span><span id="__span-0-82"><a id="__codelineno-0-82" name="__codelineno-0-82"></a>        <span class="n">df</span><span class="o">.</span><span class="n">body_mass_g</span><span class="o">.</span><span class="n">min</span><span class="p">()</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">),</span>
-</span><span id="__span-0-83"><a id="__codelineno-0-83" name="__codelineno-0-83"></a>        <span class="n">df</span><span class="o">.</span><span class="n">body_mass_g</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">),</span>
-</span><span id="__span-0-84"><a id="__codelineno-0-84" name="__codelineno-0-84"></a>        <span class="n">df</span><span class="o">.</span><span class="n">body_mass_g</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span>
-</span><span id="__span-0-85"><a id="__codelineno-0-85" name="__codelineno-0-85"></a>    <span class="p">)</span>
-</span><span id="__span-0-86"><a id="__codelineno-0-86" name="__codelineno-0-86"></a><span class="hll">    <span class="n">body_mass_g</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">slider</span><span class="p">(</span>
-</span></span><span id="__span-0-87"><a id="__codelineno-0-87" name="__codelineno-0-87"></a><span class="hll">        <span class="s2">&quot;Body Mass(g)&quot;</span><span class="p">,</span>
-</span></span><span id="__span-0-88"><a id="__codelineno-0-88" name="__codelineno-0-88"></a><span class="hll">        <span class="n">min_value</span><span class="o">=</span><span class="nb">min</span><span class="p">,</span>
-</span></span><span id="__span-0-89"><a id="__codelineno-0-89" name="__codelineno-0-89"></a><span class="hll">        <span class="n">max_value</span><span class="o">=</span><span class="nb">max</span><span class="p">,</span>
-</span></span><span id="__span-0-90"><a id="__codelineno-0-90" name="__codelineno-0-90"></a><span class="hll">        <span class="n">value</span><span class="o">=</span><span class="n">mean</span><span class="p">,</span>
-</span></span><span id="__span-0-91"><a id="__codelineno-0-91" name="__codelineno-0-91"></a><span class="hll">    <span class="p">)</span>
-</span></span><span id="__span-0-92"><a id="__codelineno-0-92" name="__codelineno-0-92"></a>    <span class="c1"># Gender</span>
-</span><span id="__span-0-93"><a id="__codelineno-0-93" name="__codelineno-0-93"></a><span class="hll">    <span class="n">gender</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">radio</span><span class="p">(</span>
-</span></span><span id="__span-0-94"><a id="__codelineno-0-94" name="__codelineno-0-94"></a><span class="hll">        <span class="s2">&quot;Gender&quot;</span><span class="p">,</span>
-</span></span><span id="__span-0-95"><a id="__codelineno-0-95" name="__codelineno-0-95"></a><span class="hll">        <span class="p">(</span><span class="s2">&quot;Male&quot;</span><span class="p">,</span> <span class="s2">&quot;Female&quot;</span><span class="p">),</span>
-</span></span><span id="__span-0-96"><a id="__codelineno-0-96" name="__codelineno-0-96"></a><span class="hll">    <span class="p">)</span>
-</span></span></code></pre></div></td></tr></table></div>
-<h2 id="feature-data-preprocessing">Feature Data Preprocessing<a class="headerlink" href="#feature-data-preprocessing" title="Permanent link">&para;</a></h2>
-<p>Create a DataFrame from user input and combine it with existing penguin data using pd.concat, ensuring the new data undergoes the same preprocessing steps as our training data.</p>
-<p>Edit and update the <code>streamlit_app.py</code> with the following code,</p>
-<div class="language-py highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">  1</a></span>
+<p><strong>Target (y):</strong></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <code>species</code> - Type of penguin (our prediction target)</li>
+</ul>
+<p>📝 <strong>One-Hot Encoding</strong> converts categorical variables into binary (0 or 1) format. For example:
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Original: island = [&#39;Torgersen&#39;, &#39;Biscoe&#39;]</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1"># After encoding:</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># island_Torgersen = [1, 0]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># island_Biscoe    = [0, 1]</span>
+</span></code></pre></div></p>
+<h2 id="encoding-features-and-target">Encoding Features and Target<a class="headerlink" href="#encoding-features-and-target" title="Permanent link">&para;</a></h2>
+<p>Edit and update the <code>$TUTORIAL_HOME/streamlit_app.py</code> with the following code,</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">streamlit_app.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">  1</a></span>
 <span class="normal"><a href="#__codelineno-1-2">  2</a></span>
 <span class="normal"><a href="#__codelineno-1-3">  3</a></span>
 <span class="normal"><a href="#__codelineno-1-4">  4</a></span>
@@ -796,7 +663,35 @@
 <span class="normal"><a href="#__codelineno-1-111">111</a></span>
 <span class="normal"><a href="#__codelineno-1-112">112</a></span>
 <span class="normal"><a href="#__codelineno-1-113">113</a></span>
-<span class="normal"><a href="#__codelineno-1-114">114</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kn">import</span> <span class="nn">streamlit</span> <span class="k">as</span> <span class="nn">st</span>
+<span class="normal"><a href="#__codelineno-1-114">114</a></span>
+<span class="normal"><a href="#__codelineno-1-115">115</a></span>
+<span class="normal"><a href="#__codelineno-1-116">116</a></span>
+<span class="normal"><a href="#__codelineno-1-117">117</a></span>
+<span class="normal"><a href="#__codelineno-1-118">118</a></span>
+<span class="normal"><a href="#__codelineno-1-119">119</a></span>
+<span class="normal"><a href="#__codelineno-1-120">120</a></span>
+<span class="normal"><a href="#__codelineno-1-121">121</a></span>
+<span class="normal"><a href="#__codelineno-1-122">122</a></span>
+<span class="normal"><a href="#__codelineno-1-123">123</a></span>
+<span class="normal"><a href="#__codelineno-1-124">124</a></span>
+<span class="normal"><a href="#__codelineno-1-125">125</a></span>
+<span class="normal"><a href="#__codelineno-1-126">126</a></span>
+<span class="normal"><a href="#__codelineno-1-127">127</a></span>
+<span class="normal"><a href="#__codelineno-1-128">128</a></span>
+<span class="normal"><a href="#__codelineno-1-129">129</a></span>
+<span class="normal"><a href="#__codelineno-1-130">130</a></span>
+<span class="normal"><a href="#__codelineno-1-131">131</a></span>
+<span class="normal"><a href="#__codelineno-1-132">132</a></span>
+<span class="normal"><a href="#__codelineno-1-133">133</a></span>
+<span class="normal"><a href="#__codelineno-1-134">134</a></span>
+<span class="normal"><a href="#__codelineno-1-135">135</a></span>
+<span class="normal"><a href="#__codelineno-1-136">136</a></span>
+<span class="normal"><a href="#__codelineno-1-137">137</a></span>
+<span class="normal"><a href="#__codelineno-1-138">138</a></span>
+<span class="normal"><a href="#__codelineno-1-139">139</a></span>
+<span class="normal"><a href="#__codelineno-1-140">140</a></span>
+<span class="normal"><a href="#__codelineno-1-141">141</a></span>
+<span class="normal"><a href="#__codelineno-1-142">142</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kn">import</span> <span class="nn">streamlit</span> <span class="k">as</span> <span class="nn">st</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="c1"># import pandas to read the our data file</span>
 </span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -812,12 +707,12 @@
 </span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14"></a>    <span class="n">df</span>
 </span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15"></a>    <span class="c1"># define and display</span>
 </span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16"></a>    <span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;**X**&quot;</span><span class="p">)</span>
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17"></a>    <span class="n">x</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;species&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18"></a>    <span class="n">x</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17"></a>    <span class="n">X_raw</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;species&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18"></a>    <span class="n">X_raw</span>
 </span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19"></a>
 </span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20"></a>    <span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;**y**&quot;</span><span class="p">)</span>
-</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21"></a>    <span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">species</span>
-</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22"></a>    <span class="n">y</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21"></a>    <span class="n">y_raw</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">species</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22"></a>    <span class="n">y_raw</span>
 </span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23"></a>
 </span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24"></a><span class="k">with</span> <span class="n">st</span><span class="o">.</span><span class="n">expander</span><span class="p">(</span><span class="s2">&quot;Data Visualization&quot;</span><span class="p">):</span>
 </span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25"></a>    <span class="n">st</span><span class="o">.</span><span class="n">scatter_chart</span><span class="p">(</span>
@@ -827,7 +722,7 @@
 </span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29"></a>        <span class="n">color</span><span class="o">=</span><span class="s2">&quot;species&quot;</span><span class="p">,</span>
 </span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30"></a>    <span class="p">)</span>
 </span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31"></a>
-</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32"></a><span class="c1"># Ineractivity</span>
+</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32"></a><span class="c1"># Interactivity</span>
 </span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33"></a><span class="c1"># Columns:</span>
 </span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34"></a><span class="c1"># &#39;species&#39;, &#39;island&#39;, &#39;bill_length_mm&#39;, &#39;bill_depth_mm&#39;,</span>
 </span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35"></a><span class="c1"># &#39;flipper_length_mm&#39;, &#39;body_mass_g&#39;, &#39;sex&#39;</span>
@@ -863,7 +758,7 @@
 </span><span id="__span-1-65"><a id="__codelineno-1-65" name="__codelineno-1-65"></a>        <span class="n">max_value</span><span class="o">=</span><span class="nb">max</span><span class="p">,</span>
 </span><span id="__span-1-66"><a id="__codelineno-1-66" name="__codelineno-1-66"></a>        <span class="n">value</span><span class="o">=</span><span class="n">mean</span><span class="p">,</span>
 </span><span id="__span-1-67"><a id="__codelineno-1-67" name="__codelineno-1-67"></a>    <span class="p">)</span>
-</span><span id="__span-1-68"><a id="__codelineno-1-68" name="__codelineno-1-68"></a>    <span class="c1"># Filpper Length</span>
+</span><span id="__span-1-68"><a id="__codelineno-1-68" name="__codelineno-1-68"></a>    <span class="c1"># Flipper Length</span>
 </span><span id="__span-1-69"><a id="__codelineno-1-69" name="__codelineno-1-69"></a>    <span class="nb">min</span><span class="p">,</span> <span class="nb">max</span><span class="p">,</span> <span class="n">mean</span> <span class="o">=</span> <span class="p">(</span>
 </span><span id="__span-1-70"><a id="__codelineno-1-70" name="__codelineno-1-70"></a>        <span class="n">df</span><span class="o">.</span><span class="n">flipper_length_mm</span><span class="o">.</span><span class="n">min</span><span class="p">()</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">),</span>
 </span><span id="__span-1-71"><a id="__codelineno-1-71" name="__codelineno-1-71"></a>        <span class="n">df</span><span class="o">.</span><span class="n">flipper_length_mm</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">),</span>
@@ -893,30 +788,64 @@
 </span><span id="__span-1-95"><a id="__codelineno-1-95" name="__codelineno-1-95"></a>        <span class="p">(</span><span class="s2">&quot;male&quot;</span><span class="p">,</span> <span class="s2">&quot;female&quot;</span><span class="p">),</span>
 </span><span id="__span-1-96"><a id="__codelineno-1-96" name="__codelineno-1-96"></a>    <span class="p">)</span>
 </span><span id="__span-1-97"><a id="__codelineno-1-97" name="__codelineno-1-97"></a>
-</span><span id="__span-1-98"><a id="__codelineno-1-98" name="__codelineno-1-98"></a><span class="c1"># Dataframes for Input features</span>
-</span><span id="__span-1-99"><a id="__codelineno-1-99" name="__codelineno-1-99"></a><span class="hll"><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
-</span></span><span id="__span-1-100"><a id="__codelineno-1-100" name="__codelineno-1-100"></a><span class="hll">    <span class="s2">&quot;island&quot;</span><span class="p">:</span> <span class="n">island</span><span class="p">,</span>
-</span></span><span id="__span-1-101"><a id="__codelineno-1-101" name="__codelineno-1-101"></a><span class="hll">    <span class="s2">&quot;bill_length_mm&quot;</span><span class="p">:</span> <span class="n">bill_length_mm</span><span class="p">,</span>
-</span></span><span id="__span-1-102"><a id="__codelineno-1-102" name="__codelineno-1-102"></a><span class="hll">    <span class="s2">&quot;bill_depth_mm&quot;</span><span class="p">:</span> <span class="n">bill_depth_mm</span><span class="p">,</span>
-</span></span><span id="__span-1-103"><a id="__codelineno-1-103" name="__codelineno-1-103"></a><span class="hll">    <span class="s2">&quot;flipper_length_mm&quot;</span><span class="p">:</span> <span class="n">flipper_length_mm</span><span class="p">,</span>
-</span></span><span id="__span-1-104"><a id="__codelineno-1-104" name="__codelineno-1-104"></a><span class="hll">    <span class="s2">&quot;body_mass_g&quot;</span><span class="p">:</span> <span class="n">body_mass_g</span><span class="p">,</span>
-</span></span><span id="__span-1-105"><a id="__codelineno-1-105" name="__codelineno-1-105"></a><span class="hll">    <span class="s2">&quot;sex&quot;</span><span class="p">:</span> <span class="n">gender</span><span class="p">,</span>
-</span></span><span id="__span-1-106"><a id="__codelineno-1-106" name="__codelineno-1-106"></a><span class="hll"><span class="p">}</span>
-</span></span><span id="__span-1-107"><a id="__codelineno-1-107" name="__codelineno-1-107"></a><span class="hll"><span class="n">input_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-</span></span><span id="__span-1-108"><a id="__codelineno-1-108" name="__codelineno-1-108"></a><span class="hll"><span class="n">input_penguins</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">input_df</span><span class="p">,</span> <span class="n">X</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-</span></span><span id="__span-1-109"><a id="__codelineno-1-109" name="__codelineno-1-109"></a><span class="hll">
-</span></span><span id="__span-1-110"><a id="__codelineno-1-110" name="__codelineno-1-110"></a><span class="hll"><span class="k">with</span> <span class="n">st</span><span class="o">.</span><span class="n">expander</span><span class="p">(</span><span class="s2">&quot;Input Features&quot;</span><span class="p">):</span>
-</span></span><span id="__span-1-111"><a id="__codelineno-1-111" name="__codelineno-1-111"></a><span class="hll">    <span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;**Input Penguins**&quot;</span><span class="p">)</span>
-</span></span><span id="__span-1-112"><a id="__codelineno-1-112" name="__codelineno-1-112"></a><span class="hll">    <span class="n">input_df</span>
-</span></span><span id="__span-1-113"><a id="__codelineno-1-113" name="__codelineno-1-113"></a><span class="hll">    <span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;**Combined Penguins Data**&quot;</span><span class="p">)</span>
-</span></span><span id="__span-1-114"><a id="__codelineno-1-114" name="__codelineno-1-114"></a><span class="hll">    <span class="n">input_penguins</span>
-</span></span></code></pre></div></td></tr></table></div>
-<p>Now that we've prepared our input data, let's handle the categorical variables using encoding techniques. Feature encoding is crucial for converting categorical data into a format suitable for machine learning models.</p>
-<p>Helpful resources for encoding:</p>
-<ul>
-<li>Scikit-learn encoding guide: https://scikit-learn.org/stable/modules/preprocessing.html#encoding-categorical-features</li>
-<li>Pandas get_dummies documentation: https://pandas.pydata.org/docs/reference/api/pandas.get_dummies.html</li>
-</ul>
+</span><span id="__span-1-98"><a id="__codelineno-1-98" name="__codelineno-1-98"></a><span class="c1"># DataFrames for Input features</span>
+</span><span id="__span-1-99"><a id="__codelineno-1-99" name="__codelineno-1-99"></a><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-1-100"><a id="__codelineno-1-100" name="__codelineno-1-100"></a>    <span class="s2">&quot;island&quot;</span><span class="p">:</span> <span class="n">island</span><span class="p">,</span>
+</span><span id="__span-1-101"><a id="__codelineno-1-101" name="__codelineno-1-101"></a>    <span class="s2">&quot;bill_length_mm&quot;</span><span class="p">:</span> <span class="n">bill_length_mm</span><span class="p">,</span>
+</span><span id="__span-1-102"><a id="__codelineno-1-102" name="__codelineno-1-102"></a>    <span class="s2">&quot;bill_depth_mm&quot;</span><span class="p">:</span> <span class="n">bill_depth_mm</span><span class="p">,</span>
+</span><span id="__span-1-103"><a id="__codelineno-1-103" name="__codelineno-1-103"></a>    <span class="s2">&quot;flipper_length_mm&quot;</span><span class="p">:</span> <span class="n">flipper_length_mm</span><span class="p">,</span>
+</span><span id="__span-1-104"><a id="__codelineno-1-104" name="__codelineno-1-104"></a>    <span class="s2">&quot;body_mass_g&quot;</span><span class="p">:</span> <span class="n">body_mass_g</span><span class="p">,</span>
+</span><span id="__span-1-105"><a id="__codelineno-1-105" name="__codelineno-1-105"></a>    <span class="s2">&quot;sex&quot;</span><span class="p">:</span> <span class="n">gender</span><span class="p">,</span>
+</span><span id="__span-1-106"><a id="__codelineno-1-106" name="__codelineno-1-106"></a><span class="p">}</span>
+</span><span id="__span-1-107"><a id="__codelineno-1-107" name="__codelineno-1-107"></a><span class="n">input_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</span><span id="__span-1-108"><a id="__codelineno-1-108" name="__codelineno-1-108"></a><span class="n">input_penguins</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">input_df</span><span class="p">,</span> <span class="n">X_raw</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-1-109"><a id="__codelineno-1-109" name="__codelineno-1-109"></a>
+</span><span id="__span-1-110"><a id="__codelineno-1-110" name="__codelineno-1-110"></a><span class="k">with</span> <span class="n">st</span><span class="o">.</span><span class="n">expander</span><span class="p">(</span><span class="s2">&quot;Input Features&quot;</span><span class="p">):</span>
+</span><span id="__span-1-111"><a id="__codelineno-1-111" name="__codelineno-1-111"></a>    <span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;**Input Penguins**&quot;</span><span class="p">)</span>
+</span><span id="__span-1-112"><a id="__codelineno-1-112" name="__codelineno-1-112"></a>    <span class="n">input_df</span>
+</span><span id="__span-1-113"><a id="__codelineno-1-113" name="__codelineno-1-113"></a>    <span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;**Combined Penguins Data**&quot;</span><span class="p">)</span>
+</span><span id="__span-1-114"><a id="__codelineno-1-114" name="__codelineno-1-114"></a>    <span class="n">input_penguins</span>
+</span><span id="__span-1-115"><a id="__codelineno-1-115" name="__codelineno-1-115"></a>
+</span><span id="__span-1-116"><a id="__codelineno-1-116" name="__codelineno-1-116"></a><span class="c1">## Data Preparation</span>
+</span><span id="__span-1-117"><a id="__codelineno-1-117" name="__codelineno-1-117"></a>
+</span><span id="__span-1-118"><a id="__codelineno-1-118" name="__codelineno-1-118"></a><span class="c1">## Encode X</span>
+</span><span id="__span-1-119"><a id="__codelineno-1-119" name="__codelineno-1-119"></a><span class="hll"><span class="n">X_encode</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;island&quot;</span><span class="p">,</span> <span class="s2">&quot;sex&quot;</span><span class="p">]</span>
+</span></span><span id="__span-1-120"><a id="__codelineno-1-120" name="__codelineno-1-120"></a><span class="hll"><span class="n">df_penguins</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">input_penguins</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="n">X_encode</span><span class="p">)</span>
+</span></span><span id="__span-1-121"><a id="__codelineno-1-121" name="__codelineno-1-121"></a><span class="hll"><span class="n">X</span><span class="o">=</span><span class="n">df_penguins</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+</span></span><span id="__span-1-122"><a id="__codelineno-1-122" name="__codelineno-1-122"></a><span class="n">input_row</span> <span class="o">=</span> <span class="n">df_penguins</span><span class="p">[:</span><span class="mi">1</span><span class="p">]</span>
+</span><span id="__span-1-123"><a id="__codelineno-1-123" name="__codelineno-1-123"></a>
+</span><span id="__span-1-124"><a id="__codelineno-1-124" name="__codelineno-1-124"></a><span class="hll"><span class="c1">## Encode Y</span>
+</span></span><span id="__span-1-125"><a id="__codelineno-1-125" name="__codelineno-1-125"></a><span class="hll"><span class="n">target_mapper</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span id="__span-1-126"><a id="__codelineno-1-126" name="__codelineno-1-126"></a><span class="hll">    <span class="s2">&quot;Adelie&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span id="__span-1-127"><a id="__codelineno-1-127" name="__codelineno-1-127"></a><span class="hll">    <span class="s2">&quot;Chinstrap&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span id="__span-1-128"><a id="__codelineno-1-128" name="__codelineno-1-128"></a><span class="hll">    <span class="s2">&quot;Gentoo&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+</span></span><span id="__span-1-129"><a id="__codelineno-1-129" name="__codelineno-1-129"></a><span class="hll"><span class="p">}</span>
+</span></span><span id="__span-1-130"><a id="__codelineno-1-130" name="__codelineno-1-130"></a><span class="hll">
+</span></span><span id="__span-1-131"><a id="__codelineno-1-131" name="__codelineno-1-131"></a><span class="hll">
+</span></span><span id="__span-1-132"><a id="__codelineno-1-132" name="__codelineno-1-132"></a><span class="hll"><span class="k">def</span> <span class="nf">target_encoder</span><span class="p">(</span><span class="n">val_y</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+</span></span><span id="__span-1-133"><a id="__codelineno-1-133" name="__codelineno-1-133"></a><span class="hll">    <span class="k">return</span> <span class="n">target_mapper</span><span class="p">[</span><span class="n">val_y</span><span class="p">]</span>
+</span></span><span id="__span-1-134"><a id="__codelineno-1-134" name="__codelineno-1-134"></a><span class="hll">
+</span></span><span id="__span-1-135"><a id="__codelineno-1-135" name="__codelineno-1-135"></a><span class="hll">
+</span></span><span id="__span-1-136"><a id="__codelineno-1-136" name="__codelineno-1-136"></a><span class="n">y</span> <span class="o">=</span> <span class="n">y_raw</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">target_encoder</span><span class="p">)</span>
+</span><span id="__span-1-137"><a id="__codelineno-1-137" name="__codelineno-1-137"></a><span class="hll">
+</span></span><span id="__span-1-138"><a id="__codelineno-1-138" name="__codelineno-1-138"></a><span class="hll"><span class="k">with</span> <span class="n">st</span><span class="o">.</span><span class="n">expander</span><span class="p">(</span><span class="s2">&quot;Data Preparation&quot;</span><span class="p">):</span>
+</span></span><span id="__span-1-139"><a id="__codelineno-1-139" name="__codelineno-1-139"></a><span class="hll">    <span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;**Encoded X (input penguins)**&quot;</span><span class="p">)</span>
+</span></span><span id="__span-1-140"><a id="__codelineno-1-140" name="__codelineno-1-140"></a><span class="hll">    <span class="n">input_row</span>
+</span></span><span id="__span-1-141"><a id="__codelineno-1-141" name="__codelineno-1-141"></a><span class="hll">    <span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;**Encoded y**&quot;</span><span class="p">)</span>
+</span></span><span id="__span-1-142"><a id="__codelineno-1-142" name="__codelineno-1-142"></a>    <span class="n">y</span>
+</span></code></pre></div></td></tr></table></div>
+<p>After successfully preprocessing our penguin dataset with appropriate encoding and feature selection, let's move forward to training our model and calculating species prediction probabilities. This step will prepare us for creating interactive visualizations in Streamlit.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="https://machinelearningmastery.com/why-one-hot-encode-data-in-machine-learning/" target="_blank">https://machinelearningmastery.com/why-one-hot-encode-data-in-machine-learning/</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://pandas.pydata.org/docs/reference/api/pandas.get_dummies.html" target="_blank">https://pandas.pydata.org/docs/reference/api/pandas.get_dummies.html</a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
 
 
@@ -946,7 +875,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../datset/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Exploring Dataset">
+          <a href="../interactive_features/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Interact with Application">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -956,20 +885,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Exploring Dataset
+                Interact with Application
               </div>
             </div>
           </a>
         
         
           
-          <a href="../data_prepration/" class="md-footer__link md-footer__link--next" aria-label="Next: Data Prepration">
+          <a href="../train_and_predict/" class="md-footer__link md-footer__link--next" aria-label="Next: Training and Prediction">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Data Prepration
+                Training and Prediction
               </div>
             </div>
             <div class="md-footer__button md-icon">
